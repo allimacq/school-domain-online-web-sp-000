@@ -32,6 +32,7 @@ class School
   
   def sort
     @roster = @roster.sort
+    @roster[@grade][0] <=> @roster[@grade][1]
     puts "#{@roster} at the end"
     
 
