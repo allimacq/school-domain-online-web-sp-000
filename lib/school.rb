@@ -32,7 +32,7 @@ class School
   
   def sort
     @roster = @roster.sort.to_h
-    @roster[@grade].sort
+    puts @roster[@grade]
     puts "#{@roster} at the end"
     
 
