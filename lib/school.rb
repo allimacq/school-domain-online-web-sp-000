@@ -31,13 +31,14 @@ class School
   end
   
   def sort
+    #first sorting by keys
     @roster = @roster.sort.to_h
     @roster.collect do |grade, names|
+      #now sorting the names in each grade alphabetically
       @roster[grade] =  @roster[grade].sort
     end
-    puts "#{@roster} at the end"
-    
-
+    #returning the sorted roster
+    return @roster
   end
   
   
